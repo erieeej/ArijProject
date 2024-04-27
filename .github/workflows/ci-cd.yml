@@ -17,19 +17,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Add your build commands here, such as compiling or interpreting your code
+      # Build your application
       - name: Build application
         run: |
-          # Replace this with your actual build commands
-          echo "Building your application..."
+          # Add your build commands here
 
-      # Add your test commands here to execute automated tests
+      # Run automated tests
       - name: Run automated tests
         run: |
-          # Replace this with your actual test commands
+          # Command to execute automated tests using your chosen test framework
+          # Replace this with the actual command to run your tests
           echo "Running automated tests..."
+          # Example for Python with pytest:
+          pytest
 
-      # Add your deployment commands here to deploy your application to a production environment
+      # Deployment step goes here
       - name: Deploy to production
         run: |
           # Replace this with your actual deployment commands
